@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tres en Red — Agencia de marketing digital. Estrategia, creatividad y contenido que hacen crecer marcas." />
+  <title>Tres en Red | Agencia de Marketing Digital</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       LOADER INICIAL
+  ══════════════════════════════════════════════ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <svg class="loader-logo" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="1.5" stroke-dasharray="176" stroke-dashoffset="176" class="loader-circle"/>
+        <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" class="loader-text-svg">3R</text>
+      </svg>
+      <span class="loader-label">Tres en Red</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CURSOR PERSONALIZADO
+  ══════════════════════════════════════════════ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVEGACIÓN
+  ══════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-mark">3R</span>
+        <span class="logo-text">Tres en Red</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#por-que">Por qué</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#diferencial">Diferencial</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <a href="#contacto" class="nav-cta">Trabajemos juntos</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menú mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#por-que" class="mobile-link">Por qué</a></li>
+        <li><a href="#servicios" class="mobile-link">Servicios</a></li>
+        <li><a href="#diferencial" class="mobile-link">Diferencial</a></li>
+        <li><a href="#contacto" class="mobile-link">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="mobile-cta mobile-link">Trabajemos juntos →</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════ -->
+  <section id="hero">
+    <!-- Fondo animado -->
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-fade">
+        <span class="badge-dot"></span>
+        Agencia creativa · Buenos Aires
+      </div>
+
+      <h1 class="hero-title reveal-up">
+        Estrategia,<br/>
+        <em>creatividad</em><br/>
+        y contenido.
+      </h1>
+
+      <p class="hero-sub reveal-up delay-1">
+        Hacemos crecer marcas que quieren dejar huella.<br class="desktop-only"/>
+        Sin fórmulas genéricas. Con propósito real.
+      </p>
+
+      <div class="hero-actions reveal-up delay-2">
+        <a href="#contacto" class="btn-primary">
+          Trabajemos juntos
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="#por-que" class="btn-ghost">
+          Conocé nuestra filosofía
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-hint reveal-fade delay-3">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+
+    <!-- Elemento decorativo flotante -->
+    <div class="hero-deco">
+      <div class="deco-card glass-card float-1">
+        <i class="fa-solid fa-bolt"></i>
+        <span>Estrategia</span>
+      </div>
+      <div class="deco-card glass-card float-2">
+        <i class="fa-solid fa-palette"></i>
+        <span>Creatividad</span>
+      </div>
+      <div class="deco-card glass-card float-3">
+        <i class="fa-solid fa-film"></i>
+        <span>Contenido</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CÍRCULO DORADO — EL POR QUÉ
+  ══════════════════════════════════════════════ -->
+  <section id="por-que" class="section">
+    <div class="container">
+
+      <div class="section-label reveal-fade">Nuestra filosofía</div>
+      <h2 class="section-title reveal-up">
+        El Círculo Dorado
+      </h2>
+      <p class="section-sub reveal-up delay-1">
+        Inspirados en Simon Sinek: las marcas que conectan de verdad<br class="desktop-only"/>
+        empiezan por el <strong>por qué</strong>, no por el qué.
+      </p>
+
+      <!-- Círculo dorado visual -->
+      <div class="golden-circle-wrap reveal-scale">
+        <div class="golden-circle">
+          <div class="gc-ring gc-why">
+            <div class="gc-label">
+              <span class="gc-num">01</span>
+              <span class="gc-name">Por qué</span>
+            </div>
+          </div>
+          <div class="gc-ring gc-how">
+            <div class="gc-label">
+              <span class="gc-num">02</span>
+              <span class="gc-name">Cómo</span>
+            </div>
+          </div>
+          <div class="gc-ring gc-what">
+            <div class="gc-label">
+              <span class="gc-num">03</span>
+              <span class="gc-name">Qué</span>
+            </div>
+          </div>
+          <div class="gc-core">
+            <span>3R</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Las tres respuestas -->
+      <div class="golden-cards">
+
+        <div class="g-card reveal-up delay-1">
+          <div class="g-card-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="g-card-num">01 · Por qué</div>
+          <h3 class="g-card-title">Creemos que cada marca tiene algo único que decir</h3>
+          <p class="g-card-body">
+            Existimos porque vimos demasiadas marcas hablar sin propósito y demasiadas agencias vender humo. Creemos que cuando una marca encuentra su voz real, conecta de verdad con las personas. Eso nos mueve.
+          </p>
+        </div>
+
+        <div class="g-card reveal-up delay-2">
+          <div class="g-card-icon">
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <div class="g-card-num">02 · Cómo</div>
+          <h3 class="g-card-title">Estrategia + creatividad + producción propia, en un solo equipo</h3>
+          <p class="g-card-body">
+            No tercerizamos lo importante. Pensamos la estrategia, diseñamos el contenido y lo producimos nosotros mismos. Así cuidamos cada detalle y aseguramos coherencia en todo lo que hacemos.
+          </p>
+        </div>
+
+        <div class="g-card reveal-up delay-3">
+          <div class="g-card-icon">
+            <i class="fa-solid fa-cube"></i>
+          </div>
+          <div class="g-card-num">03 · Qué</div>
+          <h3 class="g-card-title">Marketing digital integral para marcas que quieren crecer de verdad</h3>
+          <p class="g-card-body">
+            Gestionamos redes sociales, creamos identidad de marca, producimos contenido audiovisual y activamos campañas de publicidad digital. Todo con una sola visión: hacer crecer tu marca.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROPUESTA DE VALOR
+  ══════════════════════════════════════════════ -->
+  <section id="propuesta" class="section section-dark">
+    <div class="container">
+
+      <div class="section-label reveal-fade">Propuesta de valor</div>
+      <h2 class="section-title reveal-up">
+        Lo que hacemos posible
+      </h2>
+
+      <div class="value-grid">
+        <div class="value-big reveal-up">
+          <blockquote class="value-quote">
+            "Tu marca merece una agencia que piense tanto en el negocio como en la creatividad."
+          </blockquote>
+          <p class="value-desc">
+            En Tres en Red unimos estrategia de negocio con producción creativa real. No somos solo una agencia de contenido ni solo una consultora: somos el equipo que piensa, diseña y ejecuta todo junto.
+          </p>
+          <a href="#contacto" class="btn-primary">Empezá hoy →</a>
+        </div>
+
+        <div class="value-list">
+          <div class="value-item reveal-right delay-1">
+            <div class="vi-icon"><i class="fa-solid fa-check"></i></div>
+            <div class="vi-text">
+              <strong>Estrategia con propósito</strong>
+              <p>Cada acción tiene un porqué. Planificamos en función de tus objetivos reales, no de métricas vacías.</p>
+            </div>
+          </div>
+          <div class="value-item reveal-right delay-2">
+            <div class="vi-icon"><i class="fa-solid fa-check"></i></div>
+            <div class="vi-text">
+              <strong>Producción propia integral</strong>
+              <p>Foto, video, diseño y copy: todo sale de nuestro equipo. Una voz, una visión, cero intermediarios.</p>
+            </div>
+          </div>
+          <div class="value-item reveal-right delay-3">
+            <div class="vi-icon"><i class="fa-solid fa-check"></i></div>
+            <div class="vi-text">
+              <strong>Atención directa y personalizada</strong>
+              <p>No sos un número. Trabajamos con poca cantidad de clientes para darle a cada uno la atención que merece.</p>
+            </div>
+          </div>
+          <div class="value-item reveal-right delay-4">
+            <div class="vi-icon"><i class="fa-solid fa-check"></i></div>
+            <div class="vi-text">
+              <strong>Adaptabilidad y velocidad</strong>
+              <p>Somos ágiles. Respondemos rápido, pivotamos cuando hace falta y nunca dejamos pasar una oportunidad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICIOS
+  ══════════════════════════════════════════════ -->
+  <section id="servicios" class="section">
+    <div class="container">
+
+      <div class="section-label reveal-fade">Lo que hacemos</div>
+      <h2 class="section-title reveal-up">Servicios</h2>
+      <p class="section-sub reveal-up delay-1">
+        Todo bajo un mismo techo. Estrategia, producción y distribución<br class="desktop-only"/>
+        pensados como un sistema integrado.
+      </p>
+
+      <div class="services-grid">
+
+        <div class="srv-card reveal-up delay-1">
+          <div class="srv-icon"><i class="fa-brands fa-instagram"></i></div>
+          <h3>Gestión de Redes Sociales</h3>
+          <p>Planificación, creación y publicación de contenido. Crecimiento orgánico real con estrategia detrás.</p>
+          <div class="srv-tag">Social Media</div>
+        </div>
+
+        <div class="srv-card reveal-up delay-2">
+          <div class="srv-icon"><i class="fa-solid fa-fingerprint"></i></div>
+          <h3>Branding</h3>
+          <p>Identidad visual, naming, tono de voz y posicionamiento. Construimos marcas que se recuerdan.</p>
+          <div class="srv-tag">Identidad</div>
+        </div>
+
+        <div class="srv-card reveal-up delay-3">
+          <div class="srv-icon"><i class="fa-solid fa-video"></i></div>
+          <h3>Producción Audiovisual</h3>
+          <p>Reels, spots, coberturas y contenido de marca. Producción propia con criterio estético y narrativo.</p>
+          <div class="srv-tag">Audiovisual</div>
+        </div>
+
+        <div class="srv-card reveal-up delay-1">
+          <div class="srv-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>Diseño Gráfico</h3>
+          <p>Piezas para redes, presentaciones, packaging y más. Diseño funcional que también enamora.</p>
+          <div class="srv-tag">Diseño</div>
+        </div>
+
+        <div class="srv-card reveal-up delay-2">
+          <div class="srv-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Publicidad Digital</h3>
+          <p>Campañas en Meta Ads y Google Ads con segmentación precisa y optimización constante.</p>
+          <div class="srv-tag">Ads</div>
+        </div>
+
+        <div class="srv-card reveal-up delay-3">
+          <div class="srv-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Estrategia de Contenido</h3>
+          <p>Planificación editorial, funnel de contenido y posicionamiento de marca en cada plataforma.</p>
+          <div class="srv-tag">Estrategia</div>
+        </div>
+
+        <div class="srv-card reveal-up delay-1">
+          <div class="srv-icon"><i class="fa-solid fa-scissors"></i></div>
+          <h3>Edición de Video</h3>
+          <p>Post-producción profesional: color grading, motion graphics y montaje con ritmo y estilo.</p>
+          <div class="srv-tag">Post-producción</div>
+        </div>
+
+        <div class="srv-card reveal-up delay-2">
+          <div class="srv-icon"><i class="fa-brands fa-meta"></i></div>
+          <h3>Meta Ads</h3>
+          <p>Campañas de performance en Facebook e Instagram. Conversiones, leads y ventas con ROI medible.</p>
+          <div class="srv-tag">Performance</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DIFERENCIAL
+  ══════════════════════════════════════════════ -->
+  <section id="diferencial" class="section section-warm">
+    <div class="container">
+
+      <div class="section-label reveal-fade">Por qué elegirnos</div>
+      <h2 class="section-title reveal-up">No somos una agencia<br/><em>más</em>.</h2>
+
+      <div class="diff-layout">
+
+        <div class="diff-left reveal-up">
+          <div class="diff-big-text">
+            Hacemos las cosas<br/>
+            <span class="accent-text">diferente.</span>
+          </div>
+          <p class="diff-desc">
+            La mayoría de las agencias fragmentan el trabajo: una empresa para la estrategia, otra para el diseño, otra para la producción. Nosotros lo reunimos todo en un solo equipo, con una sola visión.
+          </p>
+        </div>
+
+        <div class="diff-right">
+          <div class="diff-item reveal-right delay-1">
+            <div class="diff-num">01</div>
+            <div class="diff-content">
+              <h4>Pensamos como socios, no como proveedores</h4>
+              <p>Nos importa el crecimiento de tu marca tanto como te importa a vos. Tu éxito es el nuestro.</p>
+            </div>
+          </div>
+          <div class="diff-item reveal-right delay-2">
+            <div class="diff-num">02</div>
+            <div class="diff-content">
+              <h4>Producción propia, sin intermediarios</h4>
+              <p>Lo que te prometemos, lo hacemos nosotros. Foto, video, diseño, copy: todo en casa.</p>
+            </div>
+          </div>
+          <div class="diff-item reveal-right delay-3">
+            <div class="diff-num">03</div>
+            <div class="diff-content">
+              <h4>Creatividad con estrategia</h4>
+              <p>No hacemos cosas lindas que no convierten. Cada pieza tiene un objetivo claro detrás.</p>
+            </div>
+          </div>
+          <div class="diff-item reveal-right delay-4">
+            <div class="diff-num">04</div>
+            <div class="diff-content">
+              <h4>Equipo joven con visión actual</h4>
+              <p>Vivimos en las plataformas que usamos. Entendemos el algoritmo, las tendencias y la cultura.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SOBRE NOSOTROS
+  ══════════════════════════════════════════════ -->
+  <section id="nosotros" class="section">
+    <div class="container">
+
+      <div class="section-label reveal-fade">Quiénes somos</div>
+      <h2 class="section-title reveal-up">Un equipo joven<br/>con hambre de hacer.</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal-up">
+          <p class="about-lead">
+            Tres en Red nació de la convicción de que el marketing digital puede ser honesto, creativo y efectivo al mismo tiempo.
+          </p>
+          <p>
+            Somos un equipo chico, pero completo. Estrategas, diseñadores, productores y editores que trabajan juntos desde el primer día. Creemos en el trabajo bien hecho, en la transparencia con el cliente y en que cada marca —grande o chica— merece una comunicación de calidad.
+          </p>
+          <p>
+            Somos nuevos, sí. Y eso es una ventaja: tenemos energía fresca, hambre genuina, y ningún vicio de las viejas estructuras.
+          </p>
+        </div>
+
+        <div class="about-values">
+          <div class="av-card reveal-up delay-1">
+            <i class="fa-solid fa-fire"></i>
+            <strong>Energía fresca</strong>
+            <p>Pensamos en tendencias de hoy, no en fórmulas de ayer.</p>
+          </div>
+          <div class="av-card reveal-up delay-2">
+            <i class="fa-solid fa-handshake"></i>
+            <strong>Transparencia total</strong>
+            <p>Te decimos lo que funciona y lo que no. Sin venderles humo.</p>
+          </div>
+          <div class="av-card reveal-up delay-3">
+            <i class="fa-solid fa-rocket"></i>
+            <strong>Foco en resultados</strong>
+            <p>Trabajamos para que tu marca crezca, no para llenar un informe.</p>
+          </div>
+          <div class="av-card reveal-up delay-4">
+            <i class="fa-solid fa-users"></i>
+            <strong>Cercanía real</strong>
+            <p>Tenés acceso directo al equipo. Sin intermediarios ni cuentas de mail automáticas.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACTO
+  ══════════════════════════════════════════════ -->
+  <section id="contacto" class="section section-contact">
+    <div class="container">
+
+      <div class="contact-wrap">
+        <div class="contact-left reveal-up">
+          <div class="section-label">Hablemos</div>
+          <h2 class="contact-title">
+            ¿Listo para hacer<br/>
+            crecer tu marca?
+          </h2>
+          <p class="contact-sub">
+            Contanos de tu proyecto y armamos una propuesta a medida. Sin compromiso, sin costos ocultos.
+          </p>
+
+          <div class="contact-links">
+            <a href="https://wa.me/+5491100000000" target="_blank" class="contact-link whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Escribinos por WhatsApp</span>
+            </a>
+            <a href="https://instagram.com/tresenred" target="_blank" class="contact-link instagram">
+              <i class="fa-brands fa-instagram"></i>
+              <span>@tresenred</span>
+            </a>
+            <a href="mailto:hola@tresenred.com" class="contact-link email">
+              <i class="fa-solid fa-envelope"></i>
+              <span>hola@tresenred.com</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right reveal-up delay-2">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="empresa">Empresa / Marca</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu marca" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="hola@tuempresa.com" required />
+            </div>
+            <div class="form-group">
+              <label for="servicio">¿Qué necesitás?</label>
+              <select id="servicio" name="servicio">
+                <option value="">Seleccioná un servicio</option>
+                <option>Gestión de redes sociales</option>
+                <option>Branding</option>
+                <option>Producción audiovisual</option>
+                <option>Publicidad digital (Meta Ads)</option>
+                <option>Diseño gráfico</option>
+                <option>Estrategia de contenido</option>
+                <option>Paquete completo</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Contanos de tu proyecto</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Qué quiere lograr tu marca?"></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">
+              Enviar mensaje
+              <span class="btn-arrow">→</span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i>
+              ¡Mensaje enviado! Te contactamos pronto.
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-mark">3R</span>
+          <span class="logo-text">Tres en Red</span>
+          <p>Estrategia, creatividad y contenido<br/>que hacen crecer marcas.</p>
+        </div>
+        <div class="footer-links">
+          <div class="fl-col">
+            <strong>Navegación</strong>
+            <a href="#por-que">Por qué</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#diferencial">Diferencial</a>
+            <a href="#nosotros">Nosotros</a>
+          </div>
+          <div class="fl-col">
+            <strong>Contacto</strong>
+            <a href="mailto:hola@tresenred.com">hola@tresenred.com</a>
+            <a href="https://instagram.com/tresenred" target="_blank">Instagram</a>
+            <a href="https://tiktok.com/@tresenred" target="_blank">TikTok</a>
+            <a href="https://wa.me/+5491100000000" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Tres en Red. Todos los derechos reservados.</span>
+        <span>Hecho con intención.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/+5491100000000" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
